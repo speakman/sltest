@@ -69,6 +69,7 @@
             container.onclick = function() {
                 document.getElementById('cross').style.display = '';
                 document.getElementById('center-top').style.display = 'block';
+                document.getElementById('center-bottom').style.display = 'block';
             };
             return container;
         }
@@ -239,5 +240,6 @@
         document.getElementById('cross').style.display = 'none';
         document.getElementById('center-top').style.display = 'none';
         document.getElementById('chooseMarker').style.display  = 'block';
+        document.getElementById('center-bottom').style.display = 'none';
     
     }

@@ -258,6 +258,16 @@ overflow: hidden!important;
     display: inline;
     float: right;
 }
+#center-bottom {
+    display: none;
+    width: 320px;
+    z-index: 10020;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    margin-left: -160px;
+
+}
 #chooseMarker {
         display:none;
         z-index:1020;
