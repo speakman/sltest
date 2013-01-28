@@ -197,6 +197,8 @@
         map.locate({setView: false, maxZoom: 14,watch: true, enableHighAccuracy: true});
     }
 
+    map.addLayer(new L.SLMarkers());
+
     (function () {
 	var geoJsonData = {
 	    "type": "FeatureCollection",
