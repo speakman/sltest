@@ -39,6 +39,7 @@ i {
     -webkit-border-radius: 7px;
     border-radius: 7px;
     padding: 5px;
+    background: #555;
     background: rgba(0, 0, 0, 0.25);
     }
 .moreinfo a{
@@ -66,7 +67,7 @@ overflow: hidden!important;
     padding: 4px;
 }
 
-/*Placerar dialoger högst upp*/
+/*Placerar dialoger hÃ¶gst upp*/
 .ui-dialog .ui-dialog-contain { margin-top: 20px; }
 .ui-dialog-contain   {width: auto;}
                         
@@ -177,7 +178,7 @@ overflow: hidden!important;
     overflow: !important;
 }
 
-/* För conter gps icon */
+/* FÃ¶r conter gps icon */
 .centerControl {
     width: 35px;
     height: 35px;
