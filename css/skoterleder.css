@@ -5,9 +5,9 @@
 			}
 			html, body, #map {
 				padding: 0;
-				margin: 0; 
+				margin: 0;
                 height: 100%;
-                
+
 			}
 			h1, ui-title {
 				font-size: 1.4em!important;
@@ -17,7 +17,7 @@
 				font-size: 1.3em;
 			}
 			h4 {
-				margin-bottom: 5px;	
+				margin-bottom: 5px;
 			}
 			img {
 				margin: 5px;
@@ -33,7 +33,7 @@
 i {
     font-size: 1.2em;
     }
-    
+
 .moreinfo  {
     -moz-border-radius: 7px;
     -webkit-border-radius: 7px;
@@ -46,7 +46,7 @@ i {
      font-family: Arial, Helvetica, sans-serif;
      font-size: 1.3em;
      font-weight: bold;
-     
+
     padding: 3px 10px;
     color: #262626;
     text-decoration: none;
@@ -62,7 +62,7 @@ i {
 
 .leaflet-container {
 overflow: hidden!important;
-}            
+}
 .ui-collapsible-content {
     padding: 4px;
 }
@@ -70,7 +70,7 @@ overflow: hidden!important;
 /*Placerar dialoger högst upp*/
 .ui-dialog .ui-dialog-contain { margin-top: 20px; }
 .ui-dialog-contain   {width: auto;}
-                        
+
             .leaflet-popup-content p {
                 font-family: sans-serif;
                 margin: 8px;
@@ -78,14 +78,14 @@ overflow: hidden!important;
             .leaflet-popup-content h2 {
                 margin: 4px;
             }
-            
+
 
 
 			a.pup_button   {
                 font-family: Arial, Helvetica, sans-serif;
 				font-size: 1.4em;
 				font-weight: bold;
-				 
+
 				padding: 4px 14px;
 				margin: 2px 2px;
 				color: #262626;
@@ -94,10 +94,10 @@ overflow: hidden!important;
 				-moz-border-radius: 6px;
 				-webkit-border-radius: 6px;
 				border-radius: 6px;
-			}            
-            
-            
-            
+			}
+
+
+
 			.newMarker-wrap  {
 				z-index: 2000;
 				position: absolute;
@@ -105,7 +105,7 @@ overflow: hidden!important;
 				bottom: 100px;
 				padding: 1px;
                 margin: 0;
-                
+
 				-moz-border-radius: 7px;
 				-webkit-border-radius: 7px;
 				border-radius: 7px;
@@ -135,30 +135,30 @@ overflow: hidden!important;
 				bottom: 30px;
  				width: 47px;
                 height: 47px;
-                
+
                 background-image: url(../images/add-marker.png);
                 background-position: 50% 50%;
                 background-repeat: no-repeat;
                 display: block;
 			}
-            
+
             .leaflet-touch .newMarker-wrap a {
                 width: 47px;
                 height: 47px;
-            }            
-            
+            }
+
             .leaflet-control-gps {
                 background-image: url(images/gps.png);
             }
-            
+
             .addMarker {
                 width: 47px;
                 height: 47px;
                 background-image: url(../images/add-marker.png);
                 background-position: 50% 50%;
                 background-repeat: no-repeat;
-                display: block; 
-            }          
+                display: block;
+            }
 
 /* To make gray bakground*/
 .ui-dialog-background {
@@ -187,7 +187,7 @@ overflow: hidden!important;
     background-image: url(../images/kross.png);
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    display: block; 
+    display: block;
     }
 
 .leaflet-bar-part-bottom-top {
@@ -224,8 +224,8 @@ overflow: hidden!important;
  }
  .a leaflet-control-links {
     font-size: 2.5em;
- } 
- 
+ }
+
  .fb-like {
     margin-left:10px;
  }

@@ -1,5 +1,5 @@
 L.Control.Permalink = L.Control.extend({
-	includes: L.Mixin.Events, 
+	includes: L.Mixin.Events,
 
 	options: {
 		position: "bottomleft",
@@ -102,14 +102,14 @@ L.Control.Permalink = L.Control.extend({
 			p = L.UrlUtil.queryParse(L.UrlUtil.hash());
 		else
 			p = L.UrlUtil.queryParse(L.UrlUtil.query());
-		
+
 		function eq(x, y) {
 			for(var i in x)
 				if (x.hasOwnProperty(i) && x[i] != y[i])
 					return false;
 			return true;
 		}
-			
+
 		if (eq(p, this._params) && eq(this._params, p))
 			return;
 		this._params = p;

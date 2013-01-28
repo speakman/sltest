@@ -76,8 +76,8 @@
     });
 
 
-    
-    
+
+
     var moreInfoButton = L.Control.extend({
         options: {
             position: 'topright'
@@ -241,5 +241,5 @@
         document.getElementById('center-top').style.display = 'none';
         document.getElementById('chooseMarker').style.display  = 'block';
         document.getElementById('center-bottom').style.display = 'none';
-    
+
     }
