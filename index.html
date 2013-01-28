@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+        <title>Skoterleder.org - Snöskoterkarta!</title>
+        <meta property="og:title" content="Skoterleder.org - Snöskoterkarta!" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://skoterleder.org" />
+        <meta property="og:image" content="http://skoterleder.org/images/skoterleder.png" />
+        <meta property="og:site_name" content="Skoterleder.org" />
+        <meta property="fb:app_id" content="251469678234528" />
+
+        <meta property="og:description" content="En öppen och fri karta där alla kan bidra med skoterleder.
+                                                 Finns inte lederna med där du kör?
+                                                 Hjälp då till så kommer snart alla leder in på kartan!
+                                                 En karta som t.ex. kan användas på Skoterklubbars hemsidor!"/>
+
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+        <!--[if lte IE 8]>
+            <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.ie.css" />
+            <![endif]-->
+        <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+        <script src="plugins/Permalink/Permalink.js"></script>
+        <script src="plugins/Permalink/Permalink.Layer.js"></script>
+        <script src="plugins/google.js"></script>
+        <link rel="stylesheet" href="css/skoterleder.css" />
+        <script src="http://maps.google.com/maps/api/js?v=3.2&sensor=false"></script>
+	<link rel="stylesheet" href="plugins/MarkerCluster/MarkerCluster.css" />
+	<link rel="stylesheet" href="plugins/MarkerCluster/MarkerCluster.Default.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="plugins/MarkerCluster/MarkerCluster.Default.ie.css" /><![endif]-->
+	<script src="plugins/MarkerCluster/leaflet.markercluster-src.js"></script>
+        <script>
+            // To get old permalinks to work
+            if (window.location.search.substr(0,5) == "?zoom" ) {
+                window.location = 'http://skoterleder.org/' + window.location.search.replace('?zoom', '#zoom');
+            }
+        </script>
+    </head>
+    <body>
+        <div id="chooseMarker" class="shadow">
+            <ul>
+                <li class="heder">
+                    <h2>Välj typ av markör</h2>
+                </li>   
+                <li>
+                    <img src="images/icons/snowmobile-green.png" width="32" height="37">
+                    Information om Skoterled
+                </li>
+                <li>
+                    <img src="images/icons/information.png" width="32" height="37">
+                    Allmän information 
+                </li>
+                <li>
+                    <img src="images/icons/treedown.png" width="32" height="37">
+                    Blokerad Skoterled
+                </li>
+                <li>
+                    <img src="images/icons/caution.png" width="32" height="37">
+                    Varning, fara!
+                </li>
+                <li>
+                    <img src="images/icons/fixmap.png" width="32" height="37">
+                    Raportera kartfel
+                </li>
+                <li class="heder" onclick="document.getElementById('chooseMarker').style.display  = 'none';">
+                    <h2>Avbryt</h2>
+                </li>  
+            </ul>
+        </div>
+            
+        <div id="map">
+            <div id="cross" style="background-image: url(images/cross.png); display:none; z-index: 1000;position: absolute;height: 200px;width: 200px;top: 50%;left: 50%;margin-top: -100px;margin-left: -100px;" ></div>
+            <div id="center-top">
+                <div id="cross-yes" class=""><a href="#" ><img src="images/yes.png" onclick="showChooseMarker();"></a></div>
+                <div id="cross-no" class=""><a href="#" ><img src="images/no.png" ></a></div>
+            </div>
+        </div>
+
+        <script src="js/skoterleder.js"></script>
+    </body>
+</html>
