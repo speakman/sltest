@@ -1,41 +1,34 @@
-
-			body {
-				padding: 0;
-				margin: 0;
-			}
-			html, body, #map {
-				padding: 0;
-				margin: 0;
-                height: 100%;
-
-			}
-#map img {
-    margin:0;
+body {
+    padding: 0;
+    margin: 0;
 }
-			h1, ui-title {
-				font-size: 1.4em!important;
-				margin: 0.1em!important;
-			}
-			h2, .ui-btn-text {
-				font-size: 1.3em;
-			}
-			h4 {
-				margin-bottom: 5px;
-			}
-			img {
-				margin: 5px;
-			}
-			p {
-				font-size: 1em;
-				text-decoration: none;
-				text-shadow: none ;
-				font-weight: normal;
-				font-family: Georgia, Times New Roman, times-roman, georgia, serif;
-				margin: 0.4em;
-			}
-i {
-    font-size: 1.2em;
-    }
+
+html, body, #map {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+
+}
+
+h1, ui-title {
+    font-size: 1.4em!important;
+    margin: 0.1em!important;
+}
+
+h2, .ui-btn-text { font-size: 1.3em; }
+h4 { margin-bottom: 5px; }
+img { margin: 5px; }
+#map img { margin:0; }
+i { font-size: 1.2em; }
+
+p {
+    font-size: 1em;
+    text-decoration: none;
+    text-shadow: none ;
+    font-weight: normal;
+    font-family: Georgia, Times New Roman, times-roman, georgia, serif;
+    margin: 0.4em;
+}
 
 .moreinfo  {
     -moz-border-radius: 7px;
@@ -44,11 +37,12 @@ i {
     padding: 5px;
     background: #555;
     background: rgba(0, 0, 0, 0.25);
-    }
-.moreinfo a{
-     font-family: Arial, Helvetica, sans-serif;
-     font-size: 1.3em;
-     font-weight: bold;
+}
+
+.moreinfo a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
 
     padding: 3px 10px;
     color: #262626;
@@ -58,126 +52,117 @@ i {
     -webkit-border-radius: 4px;
     border-radius: 4px;
 }
+
 .leaflet-touch .moreinfo a{
     font-size: 1.6em;
-    }
-
+}
 
 .leaflet-container {
-overflow: hidden!important;
+    overflow: hidden!important;
 }
+
 .ui-collapsible-content {
     padding: 4px;
 }
 
-/*Placerar dialoger högst upp*/
+/* Placerar dialoger högst upp */
 .ui-dialog .ui-dialog-contain { margin-top: 20px; }
-.ui-dialog-contain   {width: auto;}
+.ui-dialog-contain { width: auto; }
 
-            .leaflet-popup-content p {
-                font-family: sans-serif;
-                margin: 8px;
-            }
-            .leaflet-popup-content h2 {
-                margin: 4px;
-            }
+.leaflet-popup-content p {
+    font-family: sans-serif;
+    margin: 8px;
+}
 
+.leaflet-popup-content h2 {
+    margin: 4px;
+}
 
+a.pup_button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 4px 14px;
+    margin: 2px 2px;
+    color: #262626;
+    text-decoration: none;
+    background-color: #ddd;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}
 
-			a.pup_button   {
-                font-family: Arial, Helvetica, sans-serif;
-				font-size: 1.4em;
-				font-weight: bold;
+.newMarker-wrap {
+    z-index: 2000;
+    position: absolute;
+    left: 10px;
+    bottom: 100px;
+    padding: 1px;
+    margin: 0;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    background: rgba(69, 116, 32, 0.70);
+}
 
-				padding: 4px 14px;
-				margin: 2px 2px;
-				color: #262626;
-				text-decoration: none;
-				background-color: #ddd;
-				-moz-border-radius: 6px;
-				-webkit-border-radius: 6px;
-				border-radius: 6px;
-			}
+.newMarker-wrap img {
+    padding: 8px;
+    margin: 2px;
+    color: #262626;
+    display: block;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 1);
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
 
+.newMarker {
+    z-index: 2000;
+    position: absolute;
+    left: 10px;
+    bottom: 30px;
+    width: 47px;
+    height: 47px;
+    background-image: url(../images/add-marker.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    display: block;
+}
 
+.leaflet-touch .newMarker-wrap a {
+    width: 47px;
+    height: 47px;
+}
 
-			.newMarker-wrap  {
-				z-index: 2000;
-				position: absolute;
-				left: 10px;
-				bottom: 100px;
-				padding: 1px;
-                margin: 0;
+.leaflet-control-gps {
+    background-image: url(images/gps.png);
+}
 
-				-moz-border-radius: 7px;
-				-webkit-border-radius: 7px;
-				border-radius: 7px;
-
-				background: rgba(69, 116, 32, 0.70);
-				}
-
-            .newMarker-wrap img {
-				padding: 8px;
-				margin: 2px;
-				color: #262626;
-                display: block;
-				text-decoration: none;
-				background-color: rgba(255, 255, 255, 1);
-				-moz-border-radius: 4px;
-				-webkit-border-radius: 4px;
-				border-radius: 4px;
-            }
-
-
-
-
-            .newMarker {
-				z-index: 2000;
-				position: absolute;
-				left: 10px;
-				bottom: 30px;
- 				width: 47px;
-                height: 47px;
-
-                background-image: url(../images/add-marker.png);
-                background-position: 50% 50%;
-                background-repeat: no-repeat;
-                display: block;
-			}
-
-            .leaflet-touch .newMarker-wrap a {
-                width: 47px;
-                height: 47px;
-            }
-
-            .leaflet-control-gps {
-                background-image: url(images/gps.png);
-            }
-
-            .addMarker {
-                width: 47px;
-                height: 47px;
-                background-image: url(../images/add-marker.png);
-                background-position: 50% 50%;
-                background-repeat: no-repeat;
-                display: block;
-            }
+.addMarker {
+    width: 47px;
+    height: 47px;
+    background-image: url(../images/add-marker.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    display: block;
+}
 
 /* To make gray bakground*/
 .ui-dialog-background {
-	opacity: 0.4;
-	display: block !important;
-	-webkit-transition: opacity 0.9s ease-in;
+    opacity: 0.4;
+    display: block !important;
+    -webkit-transition: opacity 0.9s ease-in;
 }
 
 .ui-dialog-background.pop.in {
-	opacity: 1;
-	-webkit-transition: opacity 0.9s ease-in;
+    opacity: 1;
+    -webkit-transition: opacity 0.9s ease-in;
 }
 
 .ui-dialog {
-	min-height: 100% !important;
-	background: transparent !important;
+    min-height: 100% !important;
+    background: transparent !important;
     overflow: !important;
 }
 
@@ -191,56 +176,62 @@ overflow: hidden!important;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     display: block;
-    }
+}
 
 .leaflet-bar-part-bottom-top {
-	-webkit-border-radius: 4px;
-	        border-radius: 4px;
-	}
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
 
 .leaflet-touch .leaflet-bar-part-bottom-top {
-	-webkit-border-radius: 7px;
-	        border-radius: 7px;
-	}
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+}
+
 .leaflet-control-zoom a {
-	width: 35px;
-	height: 35px;
+    width: 35px;
+    height: 35px;
     line-height: 35px;
-    }
+}
+
 .leaflet-touch .leaflet-control-zoom a {
-	width: 50px;
-	height: 50px;
+    width: 50px;
+    height: 50px;
     line-height: 50px;
-	}
+}
+
 .leaflet-touch .centerControl {
     width: 50px;
     height: 50px;
     background-size: 50px;
-    }
+}
 
 .leaflet-touch .leaflet-control-layers label {
     font-size: 1.6em;
- }
-
- .leaflet-control-permalink a {
-    font-size: 1.3em;
- }
- .a leaflet-control-links {
-    font-size: 2.5em;
- }
-
- .fb-like {
-    margin-left:10px;
- }
- .shadow {
-	-moz-box-shadow: 4px 4px 5px #000;
-	-webkit-box-shadow: 4px 4px 5px #000;
-	box-shadow: 4px 4px 5px #000;
-	/* For IE 8 */
-	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=135, Color='#000000')";
-	/* For IE 5.5 - 7 */
-	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=135, Color='#000000');
 }
+
+.leaflet-control-permalink a {
+    font-size: 1.3em;
+}
+
+.a leaflet-control-links {
+    font-size: 2.5em;
+}
+
+.fb-like {
+    margin-left:10px;
+}
+
+.shadow {
+    -moz-box-shadow: 4px 4px 5px #000;
+    -webkit-box-shadow: 4px 4px 5px #000;
+    box-shadow: 4px 4px 5px #000;
+    /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=135, Color='#000000')";
+    /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=135, Color='#000000');
+}
+
 #center-top {
     margin: auto;
     width: 220px;
@@ -250,17 +241,20 @@ overflow: hidden!important;
     z-index:1010;
     display: none;
     background: rgba(0, 0, 0, 0.1);
-	-webkit-border-radius: 17px;
-	        border-radius: 17px;
+    -webkit-border-radius: 17px;
+    border-radius: 17px;
 }
+
 #cross-yes {
     display: inline;
     float: left;
 }
+
 #cross-no {
     display: inline;
     float: right;
 }
+
 #center-bottom {
     display: none;
     width: 320px;
@@ -271,18 +265,20 @@ overflow: hidden!important;
     margin-left: -160px;
 
 }
+
 #chooseMarker {
-        display:none;
-        z-index:1020;
-        padding: 2px;
-        width: 320px;
-        position: absolute;
-        margin-left: -164px;
-        left:50%;
-        background-color: #bbb;
-        -webkit-border-radius: 7px;
-                border-radius: 7px;
+    display:none;
+    z-index:1020;
+    padding: 2px;
+    width: 320px;
+    position: absolute;
+    margin-left: -164px;
+    left:50%;
+    background-color: #bbb;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
 }
+
 #chooseMarker ul {
     padding: 0;
     margin: 0;
@@ -294,15 +290,17 @@ overflow: hidden!important;
     margin: 2px;
     font-size: 1.4em;
     font-weight: bold;
-	-webkit-border-radius: 7px;
-	        border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
 }
+
 #chooseMarker img {
     vertical-align: middle;
 }
+
 #chooseMarker .heder {
-padding: 1px 11px;
-margin: 2px;
-line-height: 8px;
-background-color: rgb(222, 226, 177);
+    padding: 1px 11px;
+    margin: 2px;
+    line-height: 8px;
+    background-color: rgb(222, 226, 177);
 }
