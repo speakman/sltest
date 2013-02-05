@@ -58,26 +58,6 @@
 
     var touchClassName = L.Browser.touch ? "leaflet-touch " : "";
 
-    var addMarkerButton = L.Control.extend({
-        options: {
-            position: 'topright'
-        },
-        onAdd: function (map) {
-            var container = L.DomUtil.create('div', touchClassName + 'moreinfo' );
-            container.id ='addMarkerButton';
-            container.innerHTML += '<a href="#" >Lägg till markör</a>';
-            container.onclick = function() {
-                document.getElementById('cross').style.display = '';
-                document.getElementById('center-top').style.display = 'block';
-                document.getElementById('center-bottom').style.display = 'block';
-            };
-            return container;
-        }
-    });
-
-
-
-
     var moreInfoButton = L.Control.extend({
         options: {
             position: 'topright'
@@ -181,7 +161,7 @@
                                               {'Visa skoterleder':overl, 'Visa information':info });
 
     map.addControl(new moreInfoButton());
-    map.addControl(new addMarkerButton());
+    map.addControl(new L.Control.SLMarkers());
     map.addControl(layersControl);
     map.addControl(new L.Control.Permalink({
         text: 'Permalink', useAnchor: true,
@@ -196,8 +176,6 @@
         var myCircle = L.circle(tmp_coords, 1).addTo(map);
         map.locate({setView: false, maxZoom: 14,watch: true, enableHighAccuracy: true});
     }
-
-    map.addLayer(new L.SLMarkers());
 
     (function () {
 	var geoJsonData = {
