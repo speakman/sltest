@@ -24,10 +24,10 @@ L.Control.Permalink = L.Control.extend({
 		L.DomEvent.disableClickPropagation(this._container);
 		this._map = map;
 		this._href = L.DomUtil.create('a', null, this._container);
-		this._href.innerHTML = this.options.text
+		this._href.innerHTML = this.options.text;
 
 		map.on('moveend', this._update_center, this);
-		this.fire("update", {params: this._params})
+		this.fire("update", {params: this._params});
 		this._update_center();
 
 		if (this.options.useAnchor && 'onhashchange' in window) {
@@ -74,7 +74,7 @@ L.Control.Permalink = L.Control.extend({
 				shift *= 10;
 			}
 			return Math.floor(x)/shift;
-		}
+		};
 		point.lat = round(point.lat, (ne.lat - sw.lat) / size.y);
 		point.lng = round(point.lng, (ne.lng - sw.lng) / size.x);
 		return point;
@@ -85,7 +85,7 @@ L.Control.Permalink = L.Control.extend({
 		for(var i in obj) {
 			if (!obj.hasOwnProperty(i)) continue;
 			if (obj[i] != null && obj[i] != undefined)
-				this._params[i] = obj[i]
+				this._params[i] = obj[i];
 			else
 				delete this._params[i];
 		}
@@ -114,7 +114,7 @@ L.Control.Permalink = L.Control.extend({
 			return;
 		this._params = p;
 		this._update_href();
-		this.fire("update", {params: this._params})
+		this.fire("update", {params: this._params});
 	},
 
 	_set_center: function(e)
@@ -150,7 +150,7 @@ L.UrlUtil = {
 		return href.slice(idx+1);
 	},
 
-	hash: function() { return window.location.hash.slice(1) },
+	hash: function() { return window.location.hash.slice(1); },
 
 	updateParamString: function (q, obj) {
 		var p = L.UrlUtil.queryParse(q);

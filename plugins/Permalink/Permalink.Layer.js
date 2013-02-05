@@ -55,9 +55,9 @@ L.Control.Layers.include({
 				continue;
 			obj = this._layers[i];
 			if (!obj.overlay && this._map.hasLayer(obj.layer))
-				this._map.removeLayer(obj.layer)
+				this._map.removeLayer(obj.layer);
 		}
-		this._map.addLayer(layer)
+		this._map.addLayer(layer);
 		this._update();
 	},
 
