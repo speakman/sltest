@@ -38,11 +38,60 @@
 .slmarkers-infoframe-content * {
     margin: 0;
 }
-
+.slmarkers-infoframe-content h2{
+    padding: 10px;
+}
 .slmarkers-button {
     width: 90px;
     height: 60px;
     margin: 5px;
+    padding-left: 30px;
     float: left;
     font-size: 0.9em;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 10px;
+    border: solid;
+    border-color: rgba(50,50,50,0.8);
+}
+.slmarkers-button-setmark {
+    background-image: url(accept.png);
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    background-position: 0px 7px;
+}
+.slmarkers-button-cancel {
+    background-image: url(cancel.png);
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    background-position: 0px 7px;
+}
+.slmarkers-button-snowmobile {
+    background-image: url(icons/snowmobile-green.png);
+    background-repeat: no-repeat;
+    background-size: 28px 34px;
+    background-position: 0px 10px;
+}
+.slmarkers-button-info {
+    background-image: url(icons/information.png);
+    background-repeat: no-repeat;
+    background-size: 28px 34px;
+    background-position: 0px 10px;
+}
+.slmarkers-button-blocking {
+    background-image: url(icons/blocking.png);
+    background-repeat: no-repeat;
+    background-size: 28px 34px;
+    background-position: 0px 10px;
+}
+.slmarkers-button-warning {
+    background-image: url(icons/warning.png);
+    background-repeat: no-repeat;
+    background-size: 28px 34px;
+    background-position: 0px 10px;
+}
+.slmarkers-button-maperror {
+    background-image: url(icons/maperror.png);
+    background-repeat: no-repeat;
+    background-size: 28px 34px;
+    background-position: 0px 10px;
 }

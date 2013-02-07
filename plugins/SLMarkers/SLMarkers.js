@@ -8,7 +8,8 @@ L.Control.SLMarkers = L.Control.extend({
         { name: 'info', title: "Allmän information" },
         { name: 'blocking', title: "Blockerad skoterled" },
         { name: 'warning', title: 'Varning, fara!' },
-        { name: 'maperror', title: 'Rapportera kartfel' }
+        { name: 'maperror', title: 'Rapportera kartfel' },
+        { name: 'cancel', title: 'Avbryt' }
     ],
 
     onAdd: function (map) {
