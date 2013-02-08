@@ -213,6 +213,46 @@
 
 	map.addLayer(markers);
 	map.fitBounds(markers.getBounds());
+
+        /* Test av custom Icons */ 
+        var snowmobileGreenIcon = L.icon({
+            iconUrl: 'plugins/SLMarkers/icons/snowmobile-green.png',
+            iconSize:     [32, 37], // size of the icon
+            iconAnchor:   [16, 37], // point of the icon which will correspond to marker's location
+            popupAnchor:  [0, -33] // point from which the popup should open relative to the iconAnchor
+        });
+        var informationIcon = L.icon({
+            iconUrl: 'plugins/SLMarkers/icons/information.png',
+            iconSize:     [32, 37], // size of the icon
+            iconAnchor:   [16, 37], // point of the icon which will correspond to marker's location
+            popupAnchor:  [0, -33] // point from which the popup should open relative to the iconAnchor
+        });
+        var blockingIcon = L.icon({
+            iconUrl: 'plugins/SLMarkers/icons/blocking.png',
+            iconSize:     [32, 37], // size of the icon
+            iconAnchor:   [16, 37], // point of the icon which will correspond to marker's location
+            popupAnchor:  [0, -33] // point from which the popup should open relative to the iconAnchor
+        });
+        var warningIcon = L.icon({
+            iconUrl: 'plugins/SLMarkers/icons/warning.png',
+            iconSize:     [32, 37], // size of the icon
+            iconAnchor:   [16, 37], // point of the icon which will correspond to marker's location
+            popupAnchor:  [0, -33] // point from which the popup should open relative to the iconAnchor
+        });
+        var maperrorIcon = L.icon({
+            iconUrl: 'plugins/SLMarkers/icons/maperror.png',
+            iconSize:     [32, 37], // size of the icon
+            iconAnchor:   [16, 37], // point of the icon which will correspond to marker's location
+            popupAnchor:  [0, -33] // point from which the popup should open relative to the iconAnchor
+        });
+
+        L.marker([62.534, 15.667], {icon:snowmobileGreenIcon,} ).addTo(markers);
+        L.marker([62.525, 15.679], {icon:informationIcon,} ).addTo(markers);
+        L.marker([62.533, 15.682], {icon:blockingIcon,} ).addTo(markers);
+        L.marker([62.530, 15.679], {icon:warningIcon,} ).addTo(markers);
+        L.marker([62.533, 15.674], {icon:maperrorIcon,} ).addTo(markers);
+
+
     })();
 })();
 
