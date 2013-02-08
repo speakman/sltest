@@ -178,41 +178,41 @@
     }
 
     (function () {
-	var geoJsonData = {
-	    "type": "FeatureCollection",
-	    "features": [
-		{ "type": "Feature", "id":"1", "properties": { "address": "2"   }, "geometry":
-		  { "type": "Point", "coordinates": [15.7665,62.5233 ] } },
-		{ "type": "Feature", "id":"2", "properties": { "address": "151" }, "geometry":
-		  { "type": "Point", "coordinates": [15.5665,62.5133    ] } },
-		{ "type": "Feature", "id":"3", "properties": { "address": "21"  }, "geometry":
-		  { "type": "Point", "coordinates": [15.5665,62.5433     ] } },
-		{ "type": "Feature", "id":"4", "properties": { "address": "14"  }, "geometry":
-		  { "type": "Point", "coordinates": [15.7165,62.5333    ] } },
-		{ "type": "Feature", "id":"5", "properties": { "address": "38B" }, "geometry":
-		  { "type": "Point", "coordinates": [15.7265,62.5333 ] } },
-		{ "type": "Feature", "id":"6", "properties": { "address": "38"  }, "geometry":
-		  { "type": "Point", "coordinates": [15.7465,62.5323 ] } }
-	    ]
-	};
+        var geoJsonData = {
+            "type": "FeatureCollection",
+            "features": [
+            { "type": "Feature", "id":"1", "properties": { "address": "2"   }, "geometry":
+              { "type": "Point", "coordinates": [15.7665,62.5233 ] } },
+            { "type": "Feature", "id":"2", "properties": { "address": "151" }, "geometry":
+              { "type": "Point", "coordinates": [15.5665,62.5133    ] } },
+            { "type": "Feature", "id":"3", "properties": { "address": "21"  }, "geometry":
+              { "type": "Point", "coordinates": [15.5665,62.5433     ] } },
+            { "type": "Feature", "id":"4", "properties": { "address": "14"  }, "geometry":
+              { "type": "Point", "coordinates": [15.7165,62.5333    ] } },
+            { "type": "Feature", "id":"5", "properties": { "address": "38B" }, "geometry":
+              { "type": "Point", "coordinates": [15.7265,62.5333 ] } },
+            { "type": "Feature", "id":"6", "properties": { "address": "38"  }, "geometry":
+              { "type": "Point", "coordinates": [15.7465,62.5323 ] } }
+            ]
+        };
 
-	var markers = new L.MarkerClusterGroup();
+        var markers = new L.MarkerClusterGroup();
 
-	var geoJsonLayer = L.geoJson(geoJsonData, {
-	    onEachFeature: function (feature, marker) {
-		marker.bindPopup("Loading...");
-		marker.on('click', function () {
-		    setTimeout(function () {
-			marker.bindPopup("DONE");
-			marker.openPopup();
-		    }, 1000);
-		});
-	    }
-	});
-	markers.addLayer(geoJsonLayer);
+        var geoJsonLayer = L.geoJson(geoJsonData, {
+            onEachFeature: function (feature, marker) {
+            marker.bindPopup("Loading...");
+            marker.on('click', function () {
+                setTimeout(function () {
+                marker.bindPopup("DONE");
+                marker.openPopup();
+                }, 1000);
+            });
+            }
+        });
+        markers.addLayer(geoJsonLayer);
 
-	map.addLayer(markers);
-	map.fitBounds(markers.getBounds());
+        map.addLayer(markers);
+        map.fitBounds(markers.getBounds());
 
         /* Test av custom Icons */ 
         var snowmobileGreenIcon = L.icon({
